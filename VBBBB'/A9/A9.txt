@@ -1,0 +1,18 @@
+DECLARE str1, str2, str3, str4, str, str6 : STRING
+
+str1 <-- ""
+str2 <-- ""
+str3 <-- ""
+str4 <-- ""
+str5 <-- ""
+str6 <-- ""
+
+INPUT ("Enter 1st String:"), str1
+INPUT ("Enter 2nd String:"), str2
+
+str3 <-- Left(str1, 2)
+str4 <-- Left(str2, 2)
+str5 <-- Mid(str1, 3, Len(str1))
+str6 <-- Mid(str2, 3, Len(str2))
+ 
+OUTPUT (str4, str5," ", str3, str6)

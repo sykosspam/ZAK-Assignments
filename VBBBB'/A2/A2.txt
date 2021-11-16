@@ -1,0 +1,26 @@
+DECLARE Str1, Str2 : STRING
+DECLARE Char1, Char2, Char3 : Character
+DECLARE Count : Integer
+
+Str1 <-- ""
+Str2 <-- ""
+Char1 <-- ''
+Char2 <-- ''
+Char3 <-- ''
+Count <-- 0
+
+INPUT "Enter The String" , Str1
+INPUT "Enter the character which has to be replace:" , Char1
+INPUT "Enter the character to replace with:" , Char2
+
+For Count <-- 1 To Len(Str1)
+            Char3 <-- Mid(Str1, Count, 1)
+            If Char3 =Char1 
+              Then
+                Str2 <-- Str2 & Char2
+            Else
+                Str2 <-- Str2 & Char3
+            EndIf
+Next
+ 
+OUTPUT "Substituted String:" , Str2

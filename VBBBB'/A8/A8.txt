@@ -1,0 +1,22 @@
+DECLARE Str1, Str2 : STRING
+DECLARE Char2, Char1 : CHARACTER
+DECLARE Count: INTEGER
+
+Str1 <-- ""
+Str2 <-- ""
+Char2 <-- ''
+Count <-- 0
+
+INPUT("Enter A String: ", Str1)
+Char1 <-- LEFT(Str1, 1)
+Str2 <-- Str2 + Char1
+
+FOR Count<-- 2 To LENGTH(Str1)
+    Char2 <-- MID(Str1, Count, 1)
+    IF Char2 = Char1 
+       Then
+       Str2 <-- Str2 + "*"
+       ELSE Str2 <-- Str2 + Char2
+    EndIf
+NEXT 
+OUTPUT("Altered string: ", Str2)

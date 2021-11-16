@@ -1,0 +1,14 @@
+DECLARE str1, sr2 : STRING
+
+str1 <-- ""
+str2 <-- ""
+
+INPUT ("Enter The String:"), str1
+Str2 <-- UPPER(str1)
+
+If str1=str2
+  Then 
+   OUTPUT("All alphabets are capital")
+Else
+   OUTPUT("Alphabets are small")
+End If

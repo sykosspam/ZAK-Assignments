@@ -1,0 +1,18 @@
+DECLARE Count : INTEGER
+
+Count <-- 0 
+
+INPUT "How Many Dounuts Do you want:", Count
+OUTPUT " Number of Dounuts:", Count
+
+If Count < 10 
+  Then 
+    OUTPUT "Number Of Dounuts", Count
+ElseIf Count >= 10
+  Then 
+    OUTPUT "Number Of Dounuts many"
+
+
+
+
+
